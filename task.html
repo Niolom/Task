@@ -68,13 +68,90 @@
             </p>
             <button class="btn" onclick="Upper()">Ответ</button>
         </div>
-        <div class="task tasks__task task--g">
-            <p class="code task__code c" >
+        <div class="task tasks__task task-9">
+            <p class="code" >
                 Write a JavaScript program to draw a smile
             </p>
-            <canvas id="myCanvas" width="500" height="400" ></canvas>
-
+            <canvas id="myCanvas" width="680" height="550" ></canvas>
         </div>
+        <div class="task tasks__task task-10">
+			<h2 class="sub-title">part 2</h2>
+			Задание 1 <br>
+			На странице есть верстка:
+			<div id="string-1">Ядра в вёдра, выдру в тундру!</div>
+			<div id="string-2">Выдрав с выдры в тундре гетры</div>
+			<div id="string-3">В недрах тундры, выдры в гетрах </div>
+			<div id="string-4">Вытру гетрой выдре морду </div>
+			<div id="string-5">Тырят в вёдра ядра кедров!</div>
+			<div id="string-6">Вытру выдрой ядра кедров</div>
+		<button class="btn" onclick="Reverse()">Ответ</button>
+	</div>
+    <br>
+    <div class="task  task-11">
+        Задание 2 <br>
+        С помощью JS необходимо первым трем  элементам задать красный цвет текста, а остальным трем - зеленый.
+        На странице есть верстка <br/>
+        <br/>
+        <div class="element">Element 1</div>
+        <div class="element">Element 2</div>
+        <div class="element">Element 3</div>
+        <div class="element">Element 4</div>
+        <div class="element">Element 5</div>
+        <div class="element">Element 6</div>
+    <button class="btn" onclick="myFunction()">Ответ</button>
+</div>
+<br>
+<div class="task task-12">
+    Задание 3 <br>
+    Необходимо с помощью цикла добавить в него пять задач (элементов li) с классом task и текстом, взятым из массива задач из пяти элементов: 
+    На странице есть контейнер <br>
+    <p>
+        var tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];
+    </p>
+    <ol id="todolist"></ol> 
+<button class="btn" onclick="myContainer()">Ответ</button>
+</div>
+<br>
+<div class="task  task-13">
+    Задание 4 
+    На странице есть следующая разметка:
+    <article>
+        <h3>What is Lorem Ipsum?</h3>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+        <h3>Where does it come from?</h3>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. from "The Extremes of Good and Evil" by Cicero</p>
+        <h3>Why do we use it?</h3>
+        <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+    </article>
+    Вам необходимо с помощью JavaScript вставить после каждого тега p тег hr, для визуального отделения абзацев друг от друга. <br>
+    <button class="btn" onclick="hrline()">Ответ</button>
+</div>
+<br/>
+<div class="task task-14">
+    Задание 5
+    Дана такая разметка:
+
+    <div id="cartitems">
+        <div class="item">Milk 1 l.<span class="qty"> x 2</span></div>
+        <div class="item">Cola 1.5 l. <span class="qty"> x 1</span></div>
+        <div class="item">Bread<span class="qty"> x 2</span></div>
+        <div class="item">Cheese<span class="qty"> x 1</span></div>
+        <div class="item">Chocolate bar<span class="qty"> x 3</span></div>
+    </div>
+    <p>
+        Необходимо с помощью JavaScript удалить элемент "Cola 1.5 l" и заменить товар "Chocolate bar" на "Canned Fish", количеством 4 штуки.
+    <button class="btn" onclick="Remove()">Ответ</button>
+</div>
+<div class="task tasks__task task--n id="t6">
+    Задание 6 <br>
+    Напишите программу для создания списка задач, <br>которые будет вводить пользователь: <br>
+
+    Для каждого пункта: <br>
+    Запрашивайте содержимое пункта у пользователя с помощью prompt. <br>
+    Создавайте пункт и добавляйте его к UL. <br>
+    Процесс прерывается, когда пользователь <br>нажимает "Отмена" или вводит пустую строку<div class="br">
+    <button class="btn" onclick="infoAdd()">Ответ</button>
+</div> 
     <script src="./task.js"></script>
 </body>
 </html>

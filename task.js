@@ -122,3 +122,67 @@ context.arc(320, 240, 150, 0, 1 * Math.PI);
 context.stroke();
 context.closePath();
 
+
+function Reverse(){
+	 let end=document.getElementById("string-6").childNodes[0].nodeValue;
+	document.getElementById("string-6").innerHTML = document.getElementById("string-1").childNodes[0].nodeValue;
+	document.getElementById("string-1").innerHTML = document.getElementById("string-3").childNodes[0].nodeValue;
+document.getElementById("string-3").innerHTML = document.getElementById("string-2").childNodes[0].nodeValue;
+document.getElementById("string-2").innerHTML = document.getElementById("string-5").childNodes[0].nodeValue;
+document.getElementById("string-5").innerHTML = document.getElementById("string-4").childNodes[0].nodeValue;
+document.getElementById("string-4").innerHTML = end;
+}
+
+//Объект NodeListпредставляет собой список (набор) узлов, извлеченных из документа.
+
+function myFunction (){
+    let myNodelist = document.querySelectorAll(".element")
+    let i;
+    for (i = 0; i < myNodelist.length; i++) {
+        myNodelist[i].style.color = "green";
+        if(i<3){
+        	myNodelist[i].style.color = "red";
+        }
+    }
+}
+//Node.appendChild()функция appendChild() перемещает его из текущей позиции в новую позицию (нет необходимости удалять узел из родительского узла перед добавлением его к какому-либо другому узлу).
+function myContainer(){
+	var tasks = ['Buy lemonade', 'Make toasts', 'Repair car', 'Play games', 'Pet a cat'];
+	for(var i=0;i<5;i++){
+	 var newLi = document.createElement('li');
+	 newLi.className="task";
+	
+  newLi.innerHTML = tasks[i];
+  todolist.appendChild(newLi);
+}}
+
+function hrline(){
+    //	var all=document.getElementByTagName('*');
+    
+    let referenceNode = document.querySelectorAll('p');
+    for(var i=0;i<referenceNode.length;i++){
+    let newNode = document.createElement('hr');
+    referenceNode[i].appendChild(newNode);
+    }
+    }
+
+function Remove(){
+  let textnode = document.createTextNode("Canned Fish x 4");
+  let x = document.getElementById("cartitems");
+  x.children[1].remove();
+  x.replaceChild(textnode, x.lastChild);
+}
+
+function infoAdd(){
+    let ul = document.createElement('ul');
+    document.body.appendChild(ul);
+    while (true) {
+    let newLi = prompt("Введите список пункты","");
+    if (newLi === null || newLi === 0){
+        break
+    }
+    let li = document.createElement("li");
+    li.appendChild(document.createTextNode (newLi));
+    ul.appendChild(li);
+    }
+}
